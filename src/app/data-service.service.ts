@@ -11,6 +11,6 @@ export class DataServiceService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl).pipe(delay(500))
+    return this.http.get<any[]>(this.apiUrl).pipe(delay(2000))
   }
 }
